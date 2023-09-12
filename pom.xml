@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>dubbo-spring-boot-demo-interface</module>
+<!--        <module>dubbo-spring-boot-demo-interface</module>-->
         <module>dubbo-spring-boot-demo-provider</module>
         <module>dubbo-spring-boot-demo-consumer</module>
     </modules>
