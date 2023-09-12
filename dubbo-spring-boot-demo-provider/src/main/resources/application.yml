@@ -1,0 +1,18 @@
+dubbo:
+  application:
+    name: dubbo-springboot-demo-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181
+#  registries: # 多注册中心,注意属性级别:dubbo.registries, 不同的方法可以用@Service(registry = {"registry2"}),指定不同的注册中心
+#    provider1:
+#      register: true #默认true, false:表示服务不注册到注册中心
+#      address: zookeeper://0.0.0.0:2181
+#    provider2:
+#      register: false
+#      address: zookeeper://0.0.0.0:2182
+#    provider3:
+#      register: false
+#      address: zookeeper://0.0.0.0:2183
